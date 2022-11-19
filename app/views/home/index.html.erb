@@ -1,1 +1,11 @@
 <h1> Emprego Já </h1>
+<% @vagas.each do |vaga| %>
+<b> descrição: </b>
+<%= vaga.descricao %> <br>
+<b> empresa: </b>
+<%= vaga.empresa %> <br>
+<b> localização </b>
+<%= vaga.localizacao %> 
+<br><br><br>
+<% end %>
+
